@@ -35,12 +35,12 @@ public class OnCollisionBotPlayer : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.tag == "MainCamera")
+        if (other.gameObject.tag == "DistancePlayer")
             worldSpaceCanvas.gameObject.SetActive(true);
 
         Debug.Log("Trigger detected");
 
-        if (other.gameObject.tag == "MainCamera" && enterFirst == false)
+        if (other.gameObject.tag == "DistancePlayer" && enterFirst == false)
         {
             if (chatGPT != null)
             {

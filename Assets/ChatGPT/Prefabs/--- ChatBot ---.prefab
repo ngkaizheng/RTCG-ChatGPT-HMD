@@ -23,15 +23,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087916006844839867}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8588189, y: 4.170319, z: -5.536004}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1087916007979303579}
   - {fileID: 1087916006958155450}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1087916006958155452
 GameObject:
@@ -57,13 +57,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087916006958155452}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 849.9539, y: 362.31265, z: 6.2940607}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1087916006844839864}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1087916006958155451
 MonoBehaviour:
@@ -89,6 +89,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1087916006844839864}
     m_Modifications:
     - target: {fileID: 1652405485595496738, guid: 8600f412fded067409a21093b7b0dcfb,
@@ -99,17 +100,17 @@ PrefabInstance:
     - target: {fileID: 1652405485595496738, guid: 8600f412fded067409a21093b7b0dcfb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.8588189
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1652405485595496738, guid: 8600f412fded067409a21093b7b0dcfb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.170319
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1652405485595496738, guid: 8600f412fded067409a21093b7b0dcfb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.536004
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1652405485595496738, guid: 8600f412fded067409a21093b7b0dcfb,
         type: 3}
@@ -157,6 +158,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8600f412fded067409a21093b7b0dcfb, type: 3}
 --- !u!114 &1087916007100875062 stripped
 MonoBehaviour:

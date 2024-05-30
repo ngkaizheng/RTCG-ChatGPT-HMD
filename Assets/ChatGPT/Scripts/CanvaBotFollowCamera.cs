@@ -38,6 +38,6 @@ public class CanvaBotFollowCamera : MonoBehaviour
         Quaternion currentRotation = worldSpaceCanvas.transform.rotation;
         worldSpaceCanvas.transform.rotation = Quaternion.Euler(-15, currentRotation.eulerAngles.y + 180, currentRotation.eulerAngles.z);
 
-        worldSpaceCanvas.transform.position = botAvatar.transform.position + new Vector3(0, 5, 0);
+        worldSpaceCanvas.transform.position = botAvatar.transform.position + new Vector3(0, 2.25f, 0);
     }
 }
