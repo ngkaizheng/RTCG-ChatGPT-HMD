@@ -1012,8 +1012,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  audioSource: {fileID: 0}
-  _torchLight: {fileID: 0}
+  audioSource: {fileID: 8816498284893081764}
+  _torchLight: {fileID: 8766409984104647540}
   isOn: 0
 --- !u!114 &648175985334290580
 MonoBehaviour:

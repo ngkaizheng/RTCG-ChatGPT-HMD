@@ -6,6 +6,8 @@ TagManager:
   tags:
   - ChatBot
   - DistancePlayer
+  - CameraPhoto
+  - Flame
   layers:
   - Default
   - TransparentFX
@@ -13,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - ChatBot
   - 
   - 
   - 
