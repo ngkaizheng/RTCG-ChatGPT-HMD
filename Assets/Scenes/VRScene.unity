@@ -4307,6 +4307,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167662989}
     m_Modifications:
+    - target: {fileID: 5770008795121471500, guid: 2a22a5f9b4741b840b0db477777192e9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947739381102407705, guid: 2a22a5f9b4741b840b0db477777192e9,
+        type: 3}
+      propertyPath: m_text
+      value: 'How can you forgot my birhday?!
+
+        I''m your best friend!'
+      objectReference: {fileID: 0}
     - target: {fileID: 8620244894230387339, guid: 2a22a5f9b4741b840b0db477777192e9,
         type: 3}
       propertyPath: m_Name
@@ -4398,6 +4410,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1266815558}
+    - target: {fileID: 46650325890350530, guid: 6a7598ce2de5c2f4da3bcc852885d60a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 823f8d5383d173a4fb4153a73427684f, type: 2}
     - target: {fileID: 240386824212100470, guid: 6a7598ce2de5c2f4da3bcc852885d60a,
         type: 3}
       propertyPath: m_Mesh
@@ -5303,6 +5320,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1005651293}
+    - target: {fileID: 5400610041644314319, guid: 6a7598ce2de5c2f4da3bcc852885d60a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 823f8d5383d173a4fb4153a73427684f, type: 2}
     - target: {fileID: 5403557779363792322, guid: 6a7598ce2de5c2f4da3bcc852885d60a,
         type: 3}
       propertyPath: m_Mesh
