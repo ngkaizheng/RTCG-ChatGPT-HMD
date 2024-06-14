@@ -15,12 +15,21 @@ public class LaunchProjectile : MonoBehaviour, IHandGrabUseDelegate
     [Tooltip("The speed at which the projectile is launched")]
     public float launchSpeed = 1.0f;
 
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void Fire()
     {
         GameObject newObject = Instantiate(projectilePrefab, startPoint.position, startPoint.rotation);
 
         if (newObject.TryGetComponent(out Rigidbody rigidBody))
             ApplyForce(rigidBody);
+
+        Destroy(newObject, 5f);
     }
 
     private void ApplyForce(Rigidbody rigidBody)
@@ -34,6 +43,7 @@ public class LaunchProjectile : MonoBehaviour, IHandGrabUseDelegate
     public void BeginUse()
     {
         Fire();
+        audioSource.Play();
     }
 
     public void EndUse()

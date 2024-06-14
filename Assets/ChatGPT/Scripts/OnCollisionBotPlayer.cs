@@ -7,7 +7,7 @@ using UnityEngine;
 public class OnCollisionBotPlayer : MonoBehaviour
 {
     private ChatGPT chatGPT;
-    private Canvas worldSpaceCanvas;
+    public GameObject worldSpaceCanvas;
 
     [HideInInspector]
     public bool enterFirst = false;
@@ -20,7 +20,7 @@ public class OnCollisionBotPlayer : MonoBehaviour
         //Find ChatGPT in whole
         chatGPT = FindObjectOfType<ChatGPT>();
 
-        worldSpaceCanvas = transform.GetChild(1).GetComponent<Canvas>();
+        // worldSpaceCanvas = transform.GetChild(1).GetComponent<Canvas>();
 
         if (chatGPT == null)
         {

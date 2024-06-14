@@ -15,6 +15,8 @@ namespace Oculus.Interaction.Demo
 
         private Camera renderCamera = null;
 
+        private AudioSource audioSource;
+
         private void Awake()
         {
             renderCamera = GetComponentInChildren<Camera>();
@@ -24,6 +26,7 @@ namespace Oculus.Interaction.Demo
         {
             CreateRenderTexture();
             TurnOff();
+            audioSource = GetComponent<AudioSource>();
         }
 
         private void CreateRenderTexture()
@@ -47,6 +50,7 @@ namespace Oculus.Interaction.Demo
             }
             Photo newPhoto = CreatePhoto();
             SetPhotoImage(newPhoto);
+            audioSource.Play();
         }
 
         private Photo CreatePhoto()

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using TMPro;
 
 namespace OpenAI
 {
@@ -41,7 +42,7 @@ namespace OpenAI
             scroll.content.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 0);
 
             var item = Instantiate(message.Role == "user" ? sent : received, scroll.content);
-            item.GetChild(0).GetChild(0).GetComponent<Text>().text = message.Content;
+            item.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = message.Content;
             item.anchoredPosition = new Vector2(0, -height);
             LayoutRebuilder.ForceRebuildLayoutImmediate(item);
             height += item.sizeDelta.y;
@@ -68,6 +69,12 @@ namespace OpenAI
                 Role = "user",
                 Content = inputField.text
             };
+
+            // Do not send empty messages
+            if (inputField.text == "")
+            {
+                return;
+            }
 
             // // if (collisionBotandPlayer.enterFirst == false)
             // // {

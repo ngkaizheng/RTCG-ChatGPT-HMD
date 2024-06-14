@@ -5,12 +5,15 @@ using UnityEngine;
 public class ToggleParticle : MonoBehaviour, IHandGrabUseDelegate
 {
     [SerializeField] private ParticleSystem[] particleSystems;
+
+    private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
         // Get all particle systems in children
         particleSystems = GetComponentsInChildren<ParticleSystem>();
-
+        audioSource = GetComponent<AudioSource>();
         // Deactive gamObject
         foreach (ParticleSystem ps in particleSystems)
         {
@@ -31,6 +34,7 @@ public class ToggleParticle : MonoBehaviour, IHandGrabUseDelegate
         {
             ps.gameObject.SetActive(true);
             ps.Play();
+            audioSource.Play();
         }
     }
 
