@@ -8,6 +8,9 @@ public class OnCollisionBotPlayer : MonoBehaviour
 {
     private ChatGPT chatGPT;
     public GameObject worldSpaceCanvas;
+    public GameObject leftPointer;
+    public GameObject rightPointer;
+    private AudioSource audioSource;
 
     [HideInInspector]
     public bool enterFirst = false;
@@ -19,6 +22,8 @@ public class OnCollisionBotPlayer : MonoBehaviour
 
         //Find ChatGPT in whole
         chatGPT = FindObjectOfType<ChatGPT>();
+
+        audioSource = GetComponent<AudioSource>();
 
         // worldSpaceCanvas = transform.GetChild(1).GetComponent<Canvas>();
 
@@ -36,7 +41,11 @@ public class OnCollisionBotPlayer : MonoBehaviour
     {
 
         if (other.gameObject.tag == "DistancePlayer")
+        {
             worldSpaceCanvas.gameObject.SetActive(true);
+            leftPointer.gameObject.SetActive(true);
+            rightPointer.gameObject.SetActive(true);
+        }
 
         Debug.Log("Trigger detected");
 
@@ -45,6 +54,7 @@ public class OnCollisionBotPlayer : MonoBehaviour
             if (chatGPT != null)
             {
                 chatGPT.SendReply();
+                audioSource.Play();
             }
             else
             {

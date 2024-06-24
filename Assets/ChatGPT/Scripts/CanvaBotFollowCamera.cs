@@ -85,8 +85,8 @@ public class CanvaBotFollowCamera : MonoBehaviour
 
             // Keep the cylinder always 4 units in front of the worldSpaceCanvas
             Vector3 forwardPosition = worldSpaceCanvas.transform.localPosition + (-worldSpaceCanvas.transform.right * 4.0f);
-            Debug.Log("forwardPosition: " + forwardPosition);
-            Debug.Log("worldSpaceCanvas.transform.localPosition: " + worldSpaceCanvas.transform.localPosition);
+            // Debug.Log("forwardPosition: " + forwardPosition);
+            // Debug.Log("worldSpaceCanvas.transform.localPosition: " + worldSpaceCanvas.transform.localPosition);
 
             cylinder.transform.localPosition = forwardPosition;
 

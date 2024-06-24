@@ -54,7 +54,7 @@ public class OnVelocity_Candle : MonoBehaviour
         hasBegun = HasVelocityBegun(speed);
 
         // Log the speed for debugging
-        Debug.Log("Speed: " + speed);
+        // Debug.Log("Speed: " + speed);
 
 
         if (HasVelcoityEnded(speed))

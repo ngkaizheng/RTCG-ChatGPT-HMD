@@ -8,27 +8,9 @@ public class TriggerSettings : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //Coroutine 2 sec
+        StartCoroutine(TriggerDistanceGrabRoutine());
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    // public void TriggerButton()
-    // {
-    //     if (RayInteractor != null)
-    //     {
-    //         Debug.Log("RayInteractor Length: " + RayInteractor.Length);
-    //         for (int i = 0; i < RayInteractor.Length; i++)
-    //         {
-    //             Debug.Log("Changing RayInteractor" + i + " to " + !RayInteractor[i].activeSelf);
-    //             RayInteractor[i].SetActive(!RayInteractor[i].activeSelf);
-    //         }
-    //     }
-    // }
 
     public void TriggerDistanceGrab()
     {
@@ -42,5 +24,11 @@ public class TriggerSettings : MonoBehaviour
             }
         }
 
+    }
+
+    private IEnumerator TriggerDistanceGrabRoutine()
+    {
+        yield return new WaitForSeconds(2.0f);
+        TriggerDistanceGrab();
     }
 }

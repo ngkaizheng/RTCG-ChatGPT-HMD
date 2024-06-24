@@ -387,7 +387,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _grabSource
       value: 
-      objectReference: {fileID: 5172956615333684279}
+      objectReference: {fileID: 0}
     - target: {fileID: 7997863716738901141, guid: 732417eb7be52284b9e6b9661a90e226,
         type: 3}
       propertyPath: _pointableElement
@@ -402,7 +402,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _grabSource
       value: 
-      objectReference: {fileID: 5172956615333684279}
+      objectReference: {fileID: 0}
     - target: {fileID: 8943747498889325901, guid: 732417eb7be52284b9e6b9661a90e226,
         type: 3}
       propertyPath: _pointableElement

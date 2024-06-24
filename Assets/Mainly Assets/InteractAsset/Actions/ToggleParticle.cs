@@ -8,6 +8,10 @@ public class ToggleParticle : MonoBehaviour, IHandGrabUseDelegate
 
     private AudioSource audioSource;
 
+    public bool audioOn = false;
+
+    public bool particleOn = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +22,7 @@ public class ToggleParticle : MonoBehaviour, IHandGrabUseDelegate
         foreach (ParticleSystem ps in particleSystems)
         {
             ps.gameObject.SetActive(false);
+            particleOn = false;
         }
 
 
@@ -34,7 +39,8 @@ public class ToggleParticle : MonoBehaviour, IHandGrabUseDelegate
         {
             ps.gameObject.SetActive(true);
             ps.Play();
-            audioSource.Play();
+            if (audioOn) audioSource.Play();
+            particleOn = true;
         }
     }
 
@@ -44,6 +50,7 @@ public class ToggleParticle : MonoBehaviour, IHandGrabUseDelegate
         {
             ps.gameObject.SetActive(false);
             ps.Stop();
+            particleOn = false;
         }
     }
 
